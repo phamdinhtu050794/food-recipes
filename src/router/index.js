@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+import AddRecipePage from '../components/AddRecipePage.vue'
+import EditRecipePage from '../components/EditRecipePage.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +12,16 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/addrecipepage',
+    name: 'AddRecipePage',
+    component: AddRecipePage
+  },
+  {
+    path: '/editrecipepage',
+    name: 'EditRecipePage',
+    component: EditRecipePage
   },
   {
     path: '/about',
